@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TP3_Codigo/TP3_Codigo.iml" filepath="$PROJECT_DIR$/TP3_Codigo/TP3_Codigo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TrabajosPracticosProgra2UADE.iml" filepath="$PROJECT_DIR$/.idea/TrabajosPracticosProgra2UADE.iml" />
+    </modules>
+  </component>
+</project>
