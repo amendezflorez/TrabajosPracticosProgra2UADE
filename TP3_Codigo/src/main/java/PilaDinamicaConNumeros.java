@@ -1,5 +1,8 @@
 public class PilaDinamicaConNumeros {
 
+
+    
+
     private Nodo tope;
 
     public void apilar(int dato){

@@ -90,5 +90,40 @@ SE PRUEBAN ACÁ LOS 2 METODOS
 
          */
 
+        /*
+
+        PUNTO 4:
+        Desarrollar un algoritmo que, dada una expresión matemática o lógica con paréntesis, determine si estos se
+        encuentran correctamente balanceados. Es decir, si la cantidad de paréntesis de apertura coincide con la de cierre y
+        están correctamente ubicados.
+
+        METODO ESTA FUERA DEL MAIN COMO METODO ESTATICO
+
+        System.out.println( pilaBalanceada("(a + b) * (c - d)"));
+        System.out.println( pilaBalanceada("(a + b) * c - d)"));
+
+
+
+         */
+
+
+
+    }
+
+    //PUNTO 4
+    public static boolean pilaBalanceada (String string){
+        PilaEstaticaString pilaString = new PilaEstaticaString();
+        for (char c : string.toCharArray()) {
+
+            if (c == '('){
+                pilaString.agregar(String.valueOf(c));
+            } else if (c ==')') {
+                if (pilaString.estaVacia()){
+                    return false;
+                }
+                pilaString.eliminar();
+            }
+        }
+        return pilaString.estaVacia();
     }
 }
