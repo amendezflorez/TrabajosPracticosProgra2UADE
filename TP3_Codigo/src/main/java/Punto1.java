@@ -1,4 +1,4 @@
-public class Pila {
+public class Punto1 {
 
     final int MAX = 5;
     int[]pila = new int[MAX];
@@ -21,7 +21,7 @@ public class Pila {
 
     public void agregar(int valor){
         if (estaLlena()){
-            System.out.println("Pila llena");
+            System.out.println("Punto1 llena");
         }
         pila [++tope] = valor;
     }
@@ -55,7 +55,7 @@ public class Pila {
 
     public void mostrarTope(){
         if (estaVacia()){
-            System.out.println("Pila vacia");
+            System.out.println("Punto1 vacia");
 
         }
 
@@ -64,7 +64,7 @@ public class Pila {
 
     public void mostrar(){
         if (estaVacia()){
-            System.out.println("Pila vacia");
+            System.out.println("Punto1 vacia");
             return;
         }
         for (int i = tope ; i >=0 ; i--){

@@ -13,7 +13,7 @@ public class PilaDinamicaConNumeros {
 
     public int desapilar(){
         if (tope == null){
-            System.out.println("Pila vacía!");
+            System.out.println("Punto1 vacía!");
             return -1;
         }
         int dato = tope.dato;
@@ -23,7 +23,7 @@ public class PilaDinamicaConNumeros {
 
     public int mostrarTope(){
         if (tope == null){
-            System.out.println("Pila vacía!");
+            System.out.println("Punto1 vacía!");
             return -1;
         }
         return tope.dato;
