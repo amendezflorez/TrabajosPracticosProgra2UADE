@@ -36,7 +36,7 @@ public class Punto3 {
 
 SE PRUEBAN ACÁ LOS 2 METODOS
 
-        Pila pila =  new Pila();
+        Punto1 pila =  new Punto1();
         pila.mostrar();
         pila.agregar(5);
         pila.agregar(4);
