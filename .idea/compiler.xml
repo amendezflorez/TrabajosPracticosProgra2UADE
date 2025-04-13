@@ -9,8 +9,5 @@
         <module name="TP3_Codigo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="TP3_Codigo" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

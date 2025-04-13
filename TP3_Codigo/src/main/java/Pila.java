@@ -52,4 +52,28 @@ public class Pila {
             System.out.println(pila[i]);
         }
     }
+
+
+    public int cantidadElementos(){
+        if (estaVacia()){
+            System.out.println("La pila está vacía");
+            return 0;
+        }
+
+        return tope +1;
+    }
+
+    public void vaciarPila(){
+        if (estaVacia()){
+            System.out.println("La pila está vacía");
+
+            return;
+        }
+
+        for (int i = 0 ; i <=tope; i++){
+            pila[i]= 0;
+        }
+
+        tope = -1;
+    }
 }
