@@ -26,12 +26,31 @@ public class Punto1 {
         pila [++tope] = valor;
     }
 
+    public void agregar2(int valor){
+        for (int i = tope ;  i>=0 ; i--){
+            pila[i+1] = pila[i];
+        }
+        pila[0]=valor;
+        tope++;
+    }
+
     public void eliminar(){
         if (estaVacia()){
             System.out.println("Esta vacìa la pila");
         }
         pila[tope]= 0;
         tope -=1;
+    }
+
+    public void eliminar2(){
+        if (estaVacia()){
+            System.out.println("Pila vacia");
+        }
+        for (int i = 0 ; i < tope; i++){
+            pila[i]= pila[i+1];
+        }
+        pila[tope]= 0;
+        tope--;
     }
 
     public void mostrarTope(){
@@ -53,6 +72,15 @@ public class Punto1 {
         }
     }
 
+    public void mostrar2(){
+        if (estaVacia()){
+            System.out.println("Pila vacia");
+            return;
+        }
+        for (int i = 0 ; i <=tope ; i++){
+            System.out.println(pila[i]);
+        }
+    }
 
     public int cantidadElementos(){
         if (estaVacia()){
@@ -76,4 +104,6 @@ public class Punto1 {
 
         tope = -1;
     }
+
+
 }

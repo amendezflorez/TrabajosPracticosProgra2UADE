@@ -48,7 +48,47 @@ SE PRUEBAN ACÁ LOS 2 METODOS
 
  */
 
+        /*
 
+        PUNTO 2:
+
+        Diseñar e implementar una pila utilizando un arreglo en la que la adición o extracción del elemento (operación pop y
+        push) siempre se realice desde la posición 0 del arreglo, desplazando los elementos restantes en cada operación.
+
+
+        public void eliminar2(){
+        if (estaVacia()){
+            System.out.println("Pila vacia");
+        }
+        for (int i = 0 ; i < tope; i++){
+            pila[i]= pila[i+1];
+        }
+        pila[tope]= 0;
+        tope--;
+
+         public void agregar2(int valor){
+        for (int i = tope ;  i>=0 ; i--){
+            pila[i+1] = pila[i];
+        }
+        pila[0]=valor;
+        tope++;
+    }
+    }
+
+
+        Pila pila =  new Pila();
+        pila.mostrar2();
+        pila.agregar2(5);
+        pila.agregar2(4);
+        pila.agregar2(6);
+        pila.mostrar2();
+        System.out.println("---------");
+        pila.eliminar2();
+        pila.mostrar2();
+
+
+
+         */
 
     }
 }
