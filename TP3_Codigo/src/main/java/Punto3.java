@@ -106,6 +106,30 @@ SE PRUEBAN ACÁ LOS 2 METODOS
 
          */
 
+        /*
+        PUNTO 5:
+
+        Escribir un programa que, utilizando una pila, invierta el orden de los caracteres de una cadena de texto ingresada por
+        el usuario.
+
+
+        public String reverse(String string){
+
+        StringBuilder resultado = new StringBuilder();
+        PilaEstaticaString pilaNueva = new PilaEstaticaString();
+
+        for ( char c : string.toCharArray()){
+            pilaNueva.agregar(String.valueOf(c));
+        }
+
+        while(!pilaNueva.estaVacia()){
+            resultado.append(pilaNueva.eliminar3());
+
+        }
+        return String.valueOf(resultado);
+    }
+         */
+
 
 
     }

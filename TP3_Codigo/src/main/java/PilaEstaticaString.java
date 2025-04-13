@@ -42,7 +42,18 @@ public class PilaEstaticaString {
         tope--;
     }
 
-    // Elimina el primer elemento (posición 0) y desplaza el resto hacia la izquierda
+    public String eliminar3() {
+        if (estaVacia()) {
+            System.out.println("Pila vacía");
+            return null;
+        }
+        String valor = pila[tope];
+        pila[tope] = null; // opcional: limpiar valor
+        tope--;
+        return valor;
+    }
+
+
     public void eliminar2() {
         if (estaVacia()) {
             System.out.println("Pila vacía");
@@ -54,6 +65,7 @@ public class PilaEstaticaString {
         pila[tope] = null; // opcional
         tope--;
     }
+
 
     public void mostrarTope() {
         if (estaVacia()) {
@@ -99,5 +111,21 @@ public class PilaEstaticaString {
         }
         tope = -1;
         System.out.println("Pila vaciada");
+    }
+
+    public String reverse(String string){
+
+        StringBuilder resultado = new StringBuilder();
+        PilaEstaticaString pilaNueva = new PilaEstaticaString();
+
+        for ( char c : string.toCharArray()){
+            pilaNueva.agregar(String.valueOf(c));
+        }
+
+        while(!pilaNueva.estaVacia()){
+            resultado.append(pilaNueva.eliminar3());
+
+        }
+        return String.valueOf(resultado);
     }
 }
